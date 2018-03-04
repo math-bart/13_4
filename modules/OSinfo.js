@@ -1,4 +1,5 @@
 var os = require('os');
+var OStime = require('./OStime');
 
 function getOSinfo() {
   var type = os.type();
@@ -15,7 +16,6 @@ function getOSinfo() {
   console.log('CPU model:', cpu);
   console.log('User name:', userInfo.username);
   console.log('Home dir:', userInfo.homedir);
-  var OStime = require('./OStime');
   OStime.print();
 }
 
